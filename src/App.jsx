@@ -26,7 +26,7 @@ function App() {
         }
         const api_data= await response.json();
 
-        setData(api_data.slice(0,10));
+        setData(api_data.slice(0,100));
 
     }
     catch(err)
