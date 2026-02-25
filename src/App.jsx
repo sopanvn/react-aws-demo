@@ -38,7 +38,7 @@ function App() {
     }
     finally
     {
-      setLoading(false);
+      setTimeout(setLoading(false),2000);
     }
   }
 
