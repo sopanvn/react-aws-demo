@@ -60,11 +60,12 @@ function App() {
         <button onClick={()=>{setRefetchCount(prev=>prev+1)}}> Retry </button>      
         {loading && <p style={{color:"white"}}>Loading...</p>}
         {error && <p>{error}</p>}
-        <ul>
+        {/* <ul>
           {data.map((user)=>{
             return <li key={user.id}> {user.title} </li>
           })}
-        </ul>
+        </ul> */}
+        <span>I love you my Jana =, My Dear wife Sakshi 💖 </span>
     </>
   )
 }
