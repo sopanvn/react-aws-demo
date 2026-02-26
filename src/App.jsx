@@ -23,8 +23,8 @@ function App()
           
           <span>{tempData}</span>
           <br /><br />
-          <button onClick={acceptHandler}> Accept </button>      
-          <button onClick={rejecttHandler}> Reject </button>      
+          <button onClick={acceptHandler} style={{ backgroundColor: "green" }}> Accept </button>      
+          <button onClick={rejecttHandler} style={{ marginLeft: "5px", backgroundColor: "orange" }}> Reject </button>      
     </>
   )
 }
