@@ -6,7 +6,8 @@ function App() {
   const [data,setData] = useState([]);
   const [loading,setLoading] =useState(false);
   const [error,setError] =useState('');
-  const [refetchCount,setRefetchCount] =useState(0);
+    //const [refetchCount, setRefetchCount] = useState(0);
+    const [tempData, setTempData] = useState("I love you my Jana, My Dear wife Sakshi 💖 ");
   
 
   useEffect(()=>{
@@ -51,21 +52,27 @@ function App() {
 
   }
 
-  },[refetchCount])
+  }, [])
+
+
+    const acceptHandler = () => {
+        setTempData("I Love You Too 💖");
+    }
+
   
   
 
   return (
     <>  
-        <button onClick={()=>{setRefetchCount(prev=>prev+1)}}> Retry </button>      
+          <button onClick={() => { acceptHandler } }> Accept </button>      
         {loading && <p style={{color:"white"}}>Loading...</p>}
         {error && <p>{error}</p>}
-        {/* <ul>
+        { <ul>
           {data.map((user)=>{
             return <li key={user.id}> {user.title} </li>
           })}
-        </ul> */}
-        <span>I love you my Jana, My Dear wife Sakshi 💖 </span>
+        </ul> }
+          <span>{tempData}</span>
     </>
   )
 }
