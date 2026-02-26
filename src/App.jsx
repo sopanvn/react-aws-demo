@@ -11,6 +11,10 @@ function App()
         setTempData("I Love You Too 💖");
     }
 
+    const rejecttHandler = () => {
+        setTempData("I Love You So So Much💖");
+    }
+
   
   
 
@@ -20,6 +24,7 @@ function App()
           <span>{tempData}</span>
           <br /><br />
           <button onClick={acceptHandler}> Accept </button>      
+          <button onClick={rejecttHandler}> Reject </button>      
     </>
   )
 }
