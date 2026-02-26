@@ -4,6 +4,9 @@ import './App.css'
 function App()
 {
     const [tempData, setTempData] = useState("I love you my Jana, My Dear wife Sakshi 💖 ");
+
+
+
     const acceptHandler = () => {
         setTempData("I Love You Too 💖");
     }
@@ -13,9 +16,10 @@ function App()
 
   return (
     <>  
-          <button onClick={() => { acceptHandler } }> Accept </button>      
-        
+          
           <span>{tempData}</span>
+          <br /><br />
+          <button onClick={acceptHandler}> Accept </button>      
     </>
   )
 }
