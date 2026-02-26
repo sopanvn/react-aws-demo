@@ -11,7 +11,7 @@ function App() {
 
   useEffect(()=>{
 
-    const controller=new AbortController();
+    const controller=new AbortController(); 
 
     const fetchData = async ()=>{
 
@@ -65,7 +65,7 @@ function App() {
             return <li key={user.id}> {user.title} </li>
           })}
         </ul> */}
-        <span>I love you my Jana =, My Dear wife Sakshi 💖 </span>
+        <span>I love you my Jana, My Dear wife Sakshi 💖 </span>
     </>
   )
 }
